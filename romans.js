@@ -37,7 +37,9 @@ function init() {
       alert(convertion.message);
     }
     // eslint-disable-next-line no-undef;
-    gtag('event','calculated');
+    gtag('event','calculated',{
+      'isToRoman': modeCheckbox.checked,
+    });
   });
   
 }
