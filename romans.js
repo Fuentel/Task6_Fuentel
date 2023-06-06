@@ -36,7 +36,7 @@ function init() {
     } else {
       alert(convertion.message);
     }
-    // eslint-disable-next-line no-undef;
+    // eslint-disable-next-line no-undef
     gtag('event','calculated',{
       'isToRoman': modeCheckbox.checked,
     });
