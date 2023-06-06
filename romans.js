@@ -1,4 +1,9 @@
 // Constants for the literals
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+
+gtag('config', 'G-YM58PSSSJ9');
 const INVALID_ROMAN = 'Please enter a valid roman';
 const INVALID_INTEGER = 'Please enter a valid integer';
 const OUT_OF_RANGE = 'Out of range (1-3999)';
@@ -36,6 +41,7 @@ function init() {
       alert(convertion.message);
     }
   });
+  eslint-disable-next-line no-undef;
   gtag('event','calculated');
 }
 
@@ -95,6 +101,7 @@ const convertRomanToInteger = function(roman) {
 
   response.value = sum;
   response.result = true;
+  eslint-disable-next-line no-undef;
   gtag('event','calculatedRoman');
 
   return response;
@@ -157,6 +164,7 @@ const convertIntegerToRoman = function(num) {
 
   response.value = str;
   response.result = true;
+  eslint-disable-next-line no-undef;
   gtag('event','calculatedInteger');
   
   return response;
