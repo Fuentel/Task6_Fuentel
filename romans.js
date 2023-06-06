@@ -164,8 +164,8 @@ const convertIntegerToRoman = function(num) {
 
   response.value = str;
   response.result = true;
-  eslint-disable-next-line no-undef;
-  //gtag('event','calculatedInteger');
+  //eslint-disable-next-line no-undef;
+  gtag('event','calculatedInteger');
   
   return response;
 };
