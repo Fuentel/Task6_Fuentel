@@ -36,7 +36,7 @@ function init() {
       alert(convertion.message);
     }
   });
-
+  gtag('event','calculated');
 }
 
 // Now the convertion methods receive both an input argument instead
@@ -95,6 +95,7 @@ const convertRomanToInteger = function(roman) {
 
   response.value = sum;
   response.result = true;
+  gtag('event','calculatedRoman');
 
   return response;
 };
@@ -156,7 +157,8 @@ const convertIntegerToRoman = function(num) {
 
   response.value = str;
   response.result = true;
-
+  gtag('event','calculatedInteger');
+  
   return response;
 };
 
